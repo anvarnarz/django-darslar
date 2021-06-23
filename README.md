@@ -1,2 +1,3 @@
-# django-darslar
- Django Full Stack Dasturlash kursining kodlari.
+# Django3 - Pythonda Full-Stack Web Dasturlash kursining kodlari
+
+Dars manzili: https://mohirdev.uz/courses/django
