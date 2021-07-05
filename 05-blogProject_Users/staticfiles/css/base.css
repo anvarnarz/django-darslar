@@ -1,0 +1,49 @@
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+}
+
+header h1 a {
+    color: ForestGreen;
+    text-decoration: none;
+}
+
+
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
+.post-entry h2 a:hover {
+    color: red;
+}

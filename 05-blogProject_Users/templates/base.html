@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div>
+      <header>
+          <div class="nav-left">
+              <h1><a href="{% url 'home' %}">SariqDev blog</a></h1>
+          </div>
+          <div class="nav-righ">
+              <a href="{% url 'post_new' %}">+ Yangi Post qo'shish</a>
+          </div>
+      </header>
+        {% if user.is_authenticated %}
+            <p>Xush kelibsiz, {{ user.username }}!</p>
+            <p><a href="{% url 'logout' %}">Saytdan chiqish</a></p>
+        {% else %}
+            <p>
+                <a href="{% url 'login' %}">Saytga kirish</a> |
+                <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a>
+
+            </p>
+
+        {% endif %}
+      <div>
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </div>
+</body>
+</html>
