@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bosh sahifa{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Assalom alaykum!</h1>
+        <p class="lead">Anvar Narzullayevning shaxsiy blogiga xush kelibsiz.</p>
+        <hr class="my-4">
+        <p>Bu yerda siz dasturlash va dasturchilarga oid so'nggi yangiliklardan xabardor bo'lib turasiz.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Postlarni ko'rish</a>
+        </p>
+    </div>
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>Yangi post</h1>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ form.media }}
+        {{ form|crispy }}
+        <button class="btn btn-success ml-2" type="submit">Saqlash</button>
+    </form>
+{% endblock content %}
